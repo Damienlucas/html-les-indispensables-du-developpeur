@@ -2,7 +2,7 @@
 .contenu{
     margin-top: 4vh;
     /* background-color: var(--tirth-color, white); */
-    background-image: url(./images/fond/networks-1987215_640.jpg);
+    background-image: url(../images/fond/networks-1987215_640.jpg);
     flex: 1 0 auto;
 }
 #logo-online{
