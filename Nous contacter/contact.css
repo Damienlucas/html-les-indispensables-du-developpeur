@@ -1,0 +1,148 @@
+/* ------------------------------section texte----------------------------------- */
+.contenu{
+    margin-top: 4vh;
+    /* background-color: var(--tirth-color, white); */
+    background-image: url(./images/fond/networks-1987215_640.jpg);
+    flex: 1 0 auto;
+}
+#logo-online{
+    width: 100px;
+    height: auto;
+}
+#logo-indispen-texte{
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.div-logo{
+    display: flex;
+    justify-content: space-around;
+}
+#gogle{
+    padding: 5vh 1vw 2vh 2vw;
+    width: 100%;
+    height: 100%;
+}
+.section-div-texte{
+    border: 2px ridge rgb(19, 15, 231);
+    background-color: var(--second-color);
+    margin: 10px auto;
+}
+.section-div-texte p{
+    color: white;
+    font-size: 1em;
+    padding: 2vh 0 1vw 1vh;
+    font-weight: bold;
+}
+.p2{
+    text-align: center;
+    font-size: 0.8em;
+}
+.section-div-texte button{
+    margin-left: 3vh;
+}
+.section-div-texte button:hover{
+    transform: scale(2);
+    transition: 0.8s;
+}
+/* -------------------------------règles média querry---------------------------- */
+@media(min-width: 768px){
+    #logo-online{
+        width: 100px;
+        height: auto;
+    }
+    #logo-indispen-texte{
+        width: 80px;
+        height: auto;
+    }
+    #gogle{
+        padding: 5vh 2vw 0vh 4vw;
+    }
+    .section-div-texte p{
+        font-size: 1.1em;
+        padding: 1vh 0px 1vh 0px;
+    }
+    .section-div-texte{
+        margin: 15px 20px 30px 30px;
+    }
+    .bloc-gris{
+        display: flex;
+        justify-content: space-between;
+    }
+    .p2{
+        padding: 0px;
+    }
+    .section-div-texte button{
+        padding: 0 2vw;
+        margin: 0px 0px 1vh 0px;
+    }
+}
+@media(min-width: 990px){
+    #logo-online{
+        width: 90px;
+        height: auto;
+    }
+    #logo-indispen-texte{
+        width: 80px;
+        height: auto;
+    }
+    .div-logo{
+        flex-direction: column;
+    }
+    #gogle{
+        padding: 25px 20px 25px 20px;
+    }
+    .section-div-texte{
+        margin: 15px 20px 30px 20px;
+    }
+    .section-div-texte p{
+        font-size: 1.2em;
+        padding: 3vh 0 1vw 1vh;
+    }
+    .p2{
+        padding-top: 0px;
+    }
+    .section-div-texte button{
+        padding: 0 2vw;
+        width: 25vw;
+        height: 5vh;
+    }
+}
+@media(min-width: 1200px){
+    .section-div-texte{
+        margin: 15px 25px 15px 0;
+    }
+    #gogle{
+    padding: 15px 15px 15px 25px;
+    }
+}
+@media(min-width: 1400px){
+    body p{
+        font-size: 0.8em;
+    }
+    #logo-online{
+        width: 6vw;
+        height: auto;
+    }
+    #logo-indispen-texte{
+        width: 5vw;
+        height: auto;
+        padding-left: 1vw;
+    }
+    .section-div-texte p{
+        font-size: 1.3em;
+        padding: 1vh 0 1vw 1vh;
+    }
+    .p2{
+        padding-top: 1vh;
+        font-size: 1em;
+    }
+    .section-div-texte button{
+        width: 19vw;
+        font-size: 0.9em;
+    }
+}
+
+
+
+

@@ -1,0 +1,21 @@
+
+/* ------------------------------section texte----------------------------------- */
+.contenu{
+    background-color: var(--tirth-color, white) !important;
+}
+#bar-prog{
+    font-weight: bold;
+    font-size: 1.8em;
+}
+.progress{
+    height: 40px;
+}
+#img-progress{
+    width: 100%;
+    height: auto;
+}
+/* -------------------------------règles média querry---------------------------- */
+
+
+
+

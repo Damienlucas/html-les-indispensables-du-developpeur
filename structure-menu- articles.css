@@ -1,0 +1,247 @@
+/* --------------------------Menu déroulant-------------------------------------- */
+.sous-famille{
+    padding: 0;  
+}
+.sous-liste{
+    position: fixed;
+    left: 30px;
+    top: 40%;
+    width: 70%;
+}
+.a-sous-liste{
+    font-size: 0.8em;
+}
+.list-group{
+    border-radius: 10px;
+}
+.list-group-item{
+    background-color: var(--second-color) !important;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.list-group-item:hover{
+    background-color: white;
+    font-weight: bold;
+    color: rgb(19, 15, 231);
+    transform: translateX(50%);
+    transition: 0.8s;
+}
+/* ------------------------------section texte----------------------------------- */
+.contenu{
+    background-color: var(--second-color, white);
+    margin: 151px 15px 15px 15px;
+}
+.section-row{
+    margin-top: 30px;
+}
+.cont-1{
+    background-color: var(--main-color,white);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-2{
+    background-color: var(--main-color,white);
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+section h3{
+    color: black;
+    margin: 30px 0;
+    font-size: 1.3em;
+}
+section p{
+    padding: 5px;
+    font-size: 1em;
+    text-align: justify;
+}
+.img-anim{
+    transition: 0.5s;
+}
+.img-anim:hover{
+    transform: scale(1.6) rotate(360deg);
+    transition: 0.5s;
+}
+.cont-1 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+.mention-article{
+    font-size: 0.6em;
+    font-style: italic;
+    margin: 0 0 15px 56%;
+}
+/* -----------------------------------sommaire------------------------------------ */
+.sommaire{
+    margin: 3% 0;
+}
+.sommaire div{
+    background-color: var(--second-color, black);
+}
+.som-titre{
+    color: white;
+    font-size: 1.5em;
+    padding: 5% 0 2% 3%;
+}
+.sommaire ul{
+    color: white;    
+    padding: 0 0 4% 8%;
+}
+.sommaire li{
+    padding: 7px 0;
+}
+.sommaire a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Gentium Basic', serif;
+    font-size: 1em;
+}
+.sommaire a:hover{
+    color: rgb(133, 230, 247);
+}
+section h4{
+    font-size: 1.6em;
+    color: black;
+    margin: 2% 0 2% 3%;
+}
+.section-a{
+    color: black;
+    font-size: 0.9em;
+    animation: clignote2 8s linear infinite;
+}
+.section-li{
+    font-family: 'Gentium Basic', serif;
+    font-size: 1em;
+}
+.section-ul{
+    padding-left: 15%;
+    margin: 1% 0 0 0;
+}
+.slide-line3{
+    text-decoration: none;
+    position: relative;
+}
+.slide-line3::before{
+    content: "";
+    position: absolute;
+    background: rgb(19, 15, 231);
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+.slide-line3:hover::before{
+    transform-origin: 0 0;
+    transform: scaleX(1);
+} 
+/* ---------------------------iframe---------------------------------------------- */
+iframe{
+    width: 100%;
+    height: 320px;
+    border: none;
+    border-radius: 35px;
+}
+/* -------------------------------règles média querry---------------------------- */
+@media(min-width: 500px){
+    iframe{
+        height: 320px;
+    }
+ }
+@media(min-width: 768px){
+    .sous-liste{
+        left: 2vw;
+        top: 300px;
+        width: 100px;
+    }
+    .a-sous-liste{
+        font-size: 1em;
+    }
+    .list-group{
+        border-radius: 10px 0 0 10px;
+    }
+    .contenu{
+        margin-top: 32px;
+        margin-left: 95px;
+    }
+    section h3{
+        font-size: 1.8em;
+    }
+    .cont-1{
+        padding: 10px 0;
+    }
+    section p{
+        padding: 5px;
+        font-size: 1.4em;
+        margin: 20px 40px;
+    }
+    .sommaire a{
+        font-size: 1.8em;
+    }
+    .som-titre{
+        font-size: 2em;
+    }
+    iframe{
+        height: 350px;
+        }
+    section h3{
+        margin: 45px 0 15px 42px;
+    }
+    .mention-article{
+        font-size: 0.8em;
+        margin: 10px 0 10px 56%;
+    }
+    .section-li{
+        font-size: 1.5em;
+    }
+}
+@media(min-width: 1100px){
+    .sous-liste{
+        top: 370px;
+        width: 100px;
+    }
+    .contenu{
+        padding-bottom: 30px;
+    }
+    section h3{
+        margin: 45px 0 15px 42px;
+        font-size: 2.8em;
+    }
+    section p{
+        font-size: 1.6em;
+    }
+    iframe{
+        height: 400px;
+    }
+    .mention-article{
+        font-size: 1.1em;
+        margin: 10px 0 10px 60%;
+    }
+    .section-li{
+        font-size: 1.8em;
+    }
+}
+@media(min-width: 1400px){
+    .contenu{
+        margin-left: 7vw;
+    }
+    .sous-liste{
+        top: 355px;
+        left: 3vw;
+    }
+    .a-sous-liste{
+        font-size: 1.1em;
+    }
+    iframe{
+        height: 500px;
+    }
+    .mention-article{
+        margin: 10px 0 10px 70%;
+    }
+}

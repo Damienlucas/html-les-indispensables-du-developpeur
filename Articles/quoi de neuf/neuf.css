@@ -1,0 +1,37 @@
+/* ------------------------------section texte----------------------------------- */
+body h2{
+    font-size: 1.4em;
+}
+/* ---------------------------articles--------------------------------------------- */
+.section-img-github{
+    width: 15vw;
+    height: auto;
+}
+#section-img-lighthouse{
+    width: 12vw;
+    height: auto;
+}
+/* -------------------------------règles média querry---------------------------- */
+@media(min-width: 768px){
+    body h2{
+        font-size: 2em;
+    } 
+    .section-img-github{
+        width: 35%;
+        height: auto;
+    }
+    #section-img-lighthouse{
+        width: 35%;
+        height: auto;
+    }
+}
+@media(min-width: 1100px){
+    .section-img-github{
+        width: 90%;
+        height: auto;
+    }
+    #section-img-lighthouse{
+        width: 90%;
+        height: auto;
+    }
+}

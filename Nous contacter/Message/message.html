@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>les indispensables du développeur - Formulaire message</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../styles.css">
+        <link rel="stylesheet" href="./message.css">
+        <link rel="icon" type="image/png" href="./images/logo/logo essai2.png">
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="col-3 header-logo">
+                    <a href="../../index.html">
+                        <img src="./images/logo/logo essai2.png" alt="logo les indispensables du développeur" data-bs-toggle="tooltip" data-bs-placement="top" title="Retour à l'accueil" id="logo">
+                    </a>
+                </div>
+                <div class="col-9 header-titre">
+                    <h1>les indispensables du développeur</h1>
+                </div>
+            </div>
+            
+        </header>
+        <div class="row bandeau-titre">
+            <div class="col-10 div-texte">
+                <h2 class="defil">Votre message</h2>              
+            </div>
+        </div>
+            <form action="./Données recueillies/mypage" method="POST">
+                <div class="row">
+                    <div class="col-6 col-md-4" id="civi">
+                        <label for="civilite">Vous êtes ?</label><br />
+                        <select name="civilite" id="civil">
+                            <option value="Mme">Mme</option>
+                            <option value="M.">M.</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-8 ident">
+                        <label for="name">Nom:</label>
+                        <input type="text" id="name" name="user_name" placeholder="Entrez votre nom"
+                        maxlength="20">
+                    </div>
+                    <div class="col-12 col-md-10 ident">
+                        <label for="mail">Adresse mail:</label>
+                        <input type="email"id="mail" name="adresse_mail" placeholder="Entrez votre @dresse"
+                        maxlength="30">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-7 check">
+                        <label>Comment s'est passé votre visite:</label>
+                        <br>
+                        <input type="checkbox" id="super" name="super" class="croix">
+                        <label for="super">Super! On reviendra avec plaisir.</label>
+                        <br>
+                        <input type="checkbox" id="pas-mal" name="pas-mal" class="croix">
+                        <label for="pas-mal">Pas mal, mais il faudrait quelques ajustements.</label>
+                        <br>
+                        <input type="checkbox" id="aie" name="aie" class="croix">
+                        <label for="aie">Je ne veux pas vous vexer, mais....</label>
+                    </div>
+                    <div class="col-12 col-md-5 textarea-flex">
+                        <label for="msg" id="textera-label">Message:</label>
+                        <textarea name="user_message" id="msg" placeholder="Tapez votre message..."></textarea>
+                    </div>
+                </div>
+                <div class="form-button">
+                    <button type="submit" id="envoyer">
+                        Envoyer le message
+                    </button>
+                </div> 
+            </form>
+        <footer class="container-fluid">
+            <ul>      
+                <li>
+                    <a class="slide-link  slide-line" href="../contact.html">
+                        <span>Nous contacter</span>
+                        <span>Nous contacter</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="slide-link  slide-line" href="../Suggestion/suggestion.html">
+                        <span>Envoyer une suggestion</span>
+                        <span>Envoyer une suggestion</span>
+                    </a>
+                </li>
+                <li>
+                    <p>
+                        Copyright © 2021. Tous droits réservés.
+                    </p>
+                </li>
+            </ul>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+</html>

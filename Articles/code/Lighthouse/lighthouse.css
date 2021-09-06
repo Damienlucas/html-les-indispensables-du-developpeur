@@ -1,0 +1,52 @@
+/* --------------------------- logo article et sommaire--------------------------------------------- */
+#section-img-lighthouse{
+    width: 30%;
+    height: auto;
+}
+section h6{
+    font-size: 1.6em;
+    color: black;
+    margin: 2% 0 2% 3%;
+}
+.legende-img{
+    font-size: 1.1em;
+    font-style: italic;
+    margin-top: 1%;
+}
+/* ---------------------------------------CSS article---------------------------------- */
+.analyse{
+    border-radius: 5px;
+    border: 3px solid gray;
+    margin: 20px 0;
+    width: 100%;
+    height: auto;
+}
+.legend1{
+    margin: 0 20% 2% 35%;
+}
+.devtool{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+#video-outil{
+    border-radius: 10px;
+}
+
+
+
+
+
+/* -------------------------------règles média querry---------------------------- */
+@media(min-width: 500px){
+   
+}
+@media(min-width: 768px){
+
+}
+@media(min-width: 1100px){
+
+}
+@media(min-width: 1400px){
+
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>les indispensables du développeur - Formulaire suggestion</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../styles.css">
+        <link rel="stylesheet" href="./suggestion.css">
+        <link rel="icon" type="image/png" href="./images/logo/logo essai2.png">
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="col-3 header-logo">
+                    <a href="../../index.html">
+                        <img src="./images/logo/logo essai2.png" alt="logo les indispensables du développeur" data-bs-toggle="tooltip" data-bs-placement="top" title="Retour à l'accueil" id="logo">
+                    </a>
+                </div>
+                <div class="col-9 header-titre">
+                    <h1>les indispensables du développeur</h1>
+                </div>
+            </div>
+            
+        </header>
+        <div class="row bandeau-titre">
+            <div class="col-10 div-texte">
+                <h2 class="defil">Votre suggestion</h2>              
+            </div>
+        </div>
+            <form action="./Données recueillies/mypage" method="POST">
+                <div class="row">
+                    <div class="col-6 col-md-4" id="civi">
+                        <label for="civilite">Vous êtes ?</label><br />
+                        <select name="civilite" id="civil">
+                            <option value="Mme">Mme</option>
+                            <option value="M.">M.</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-8 ident">
+                        <label for="name">Nom:</label>
+                        <input type="text" id="name" name="user_name" placeholder="Entrez votre nom"
+                        maxlength="20">
+                    </div>
+                    <div class="col-12 col-md-10 ident">
+                        <label for="mail">Adresse mail:</label>
+                        <input type="email"id="mail" name="adresse_mail" placeholder="Entrez votre @dresse"
+                        maxlength="30">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-lg-3 check">
+                        <label>Que voulez vous proposer:</label>
+                        <br>
+                        <input type="checkbox" id="lien" name="lien" class="croix">
+                        <label for="lien">Un lien vers votre site</label>
+                        <br>
+                        <input type="checkbox" id="pdf" name="pdf" class="croix">
+                        <label for="pdf">un fichier PDF</label>
+                        <br>
+                        <input type="checkbox" id="jpeg" name="jpeg" class="croix">
+                        <label for="jpeg">un fichier JPEG</label>
+                        <br>
+                        <input type="checkbox" id="video" name="video" class="croix">
+                        <label for="video">une vidéo</label>
+                    </div>
+                    <div class="col-6 col-lg-4 div-fichier">
+                        <label for="file">Choisissez le ou les fichiers à téléverser:</label>
+                        <label for="imageFile">Sélectionner des images :</label>
+                        <input type="file" name="fichier" id="imageFile" accept="image/jpeg, image/png" multiple>
+                        <label for="videoFile">Sélectionnez un fichier vidéo :</label>
+                        <input type="file" name="fichier" id="videoFile" accept="video/*">
+                        <label for="txtFile">Sélectionner un fichier texte :</label>
+                        <input type="file" name="fichier" id="TxtFile" accept=".pdf" multiple>
+                    </div>
+                    <div class="col-12 col-lg-5 textarea-flex">
+                        <label for="msg" id="textera-label">Message:</label>
+                        <textarea name="user_message" id="msg" placeholder="Ecrivez votre suggestion ou copiez le lien url suggéré..."></textarea>
+                    </div>
+                </div>
+                <div class="form-button">
+                    <button type="submit" id="envoyer">
+                        Soumettre
+                    </button>
+                </div> 
+            </form>
+        <footer class="container-fluid">
+            <ul>      
+                <li>
+                    <a class="slide-link  slide-line" href="../contact.html">
+                        <span>Nous contacter</span>
+                        <span>Nous contacter</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="slide-link  slide-line" href="../Message/message.html">
+                        <span>Envoyer un message</span>
+                        <span>Envoyer un message</span>
+                    </a>
+                </li>
+                <li>
+                    <p>
+                        Copyright © 2021. Tous droits réservés.
+                    </p>
+                </li>
+            </ul>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+</html>
